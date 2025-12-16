@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vira's Pet Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="kucing.png" alt="Pet Icon" width="40">
+      <span class="ms-2">Vira's Pet Shop</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#paket">Paket</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rating">Rating</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search...">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h1 class="mb-3">Vira's Pet Shop</h1>
+      <p class="lead">Best Pet's Shop in Town.</p>
+      <button class="btn btn-primary me-2">Primary</button>
+      <button class="btn btn-secondary">Default</button>
+    </div>
+
+    <div class="col-md-6">
+      <img src="kucing1.jpg" alt="Cute Cat" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="container my-5">
+  <h2>Image Gallery</h2>
+  <p>Kumpulan gambar kucing lucu.</p>
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="kucing 2.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modal1" alt="Cat 1">
+        <div class="card-body text-center">
+          <p>Kucing tidur santai.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="kucing 3.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modal2" alt="Cat 2">
+        <div class="card-body text-center">
+          <p>Kucing imut berpose.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="kucing 4.jpg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#modal3" alt="Cat 3">
+        <div class="card-body text-center">
+          <p>Kucing sedang bermain.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kucing tidur santai</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="kucing 2.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kucing imut berpose</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="kucing 3.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kucing sedang bermain</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="kucing 4.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="paket" class="container my-5">
+  <h2>Paket Layanan</h2>
+  <p>Kami menawarkan berbagai paket untuk hewan peliharaan Anda.</p>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card"><div class="card-body"><h5>Paket Basic</h5><p>Makanan dan perawatan dasar.</p><a class="btn btn-primary">Pilih Paket</a></div></div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card"><div class="card-body"><h5>Paket Premium</h5><p>Grooming & vaksin.</p><a class="btn btn-primary">Pilih Paket</a></div></div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card"><div class="card-body"><h5>Paket VIP</h5><p>Konsultasi dokter hewan.</p><a class="btn btn-primary">Pilih Paket</a></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="container my-5">
+  <h2>About Us</h2>
+  <p>Vira's Pet Shop adalah toko hewan terbaik di kota.</p>
+</section>
+
+<section id="contact" class="container my-5">
+  <h2>Contact Us</h2>
+  <form>
+    <div class="mb-3"><label class="form-label">Nama</label><input class="form-control"></div>
+    <div class="mb-3"><label class="form-label">Email</label><input class="form-control"></div>
+    <div class="mb-3"><label class="form-label">Pesan</label><textarea class="form-control"></textarea></div>
+    <button class="btn btn-primary">Kirim</button>
+  </form>
+</section>
+
+<footer class="bg-dark text-light text-center py-3">
+  <p>&copy; 2023 Vira's Pet Shop</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
